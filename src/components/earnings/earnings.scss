@@ -1,0 +1,81 @@
+.earnings {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+	box-sizing: border-box;
+	font-size: .32rem;
+	.topTatal {
+		height: 20%;
+		padding-top: 8%;
+		box-sizing: border-box;
+		position: relative;
+		.totalItem {
+			width: 50%;
+			.title {
+				font-size: .36rem;
+				line-height: 1.2;
+				color: #ff9793;
+				text-align: center;
+			}
+			.orderNumber {
+				text-align: center;
+				line-height: 1.2;
+				font-size: .64rem;
+				color: #ff9793;
+				font-weight: 600;
+			}
+		}
+		
+	}
+	.smallTitle {
+		height: 5%;
+		padding-left: 5%;
+	}
+	.orderList {
+		position: absolute;
+		top: 25%;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		ul {
+			font-size: .24rem;
+			color: #999999;
+			li {
+				border-top: solid 1px #dddddd;
+				padding: .3rem 7%;
+				box-sizing: border-box;
+				.top {
+					padding-bottom: .15rem;
+					color: #666666;
+					font-size: .28rem;
+					.total {
+						font-size: .36rem;
+					}
+				}
+				.goods {
+					padding: .15rem 0;
+				}
+				.date {
+					padding-top: .15rem;	
+				}
+			}
+		}
+		.earningsColor {
+			color: #dc6060;
+		}
+		#scroller {
+			width: 100%;
+		}
+		#pullUp {
+			padding:0 10px;
+			height:30px;
+			line-height:30px;
+			color:#888;
+			text-align:center;
+		}
+	}
+}

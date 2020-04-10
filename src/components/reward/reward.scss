@@ -1,0 +1,126 @@
+.reward {
+    height: 100%;
+	width: 100%;
+    font-size: .32rem;
+  .select-date {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    height: 1.2rem;
+    font-size: .3rem;
+    line-height: .3rem;
+
+    .icon-jiantou2-copy {
+      display: inline-block;
+      font-size: 1rem;
+      color: rgb(45, 214, 87);
+      vertical-align: middle;
+
+      &.left {
+        display: inline-block;
+        transform: rotate(-90deg);
+      }
+
+      &.right {
+        display: inline-block;
+        transform: rotate(90deg);
+      }
+    }
+
+    .date {
+      display: inline-block;
+      text-align: center;
+      color: #333;
+    }
+  }
+  .change-type{
+      width: 100%;
+      padding-left: .2rem;
+      padding-bottom: .5rem;
+      span{
+          display: inline-block;
+          color: rgb(64, 155, 240);
+          text-decoration: underline;
+      }
+  }
+  .data-name {
+    height: 1rem;
+    line-height: 1rem;
+    padding-left: .2rem;
+}
+.csroll-title {
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .3rem;
+    span{
+        text-align: center;
+        color: #666;
+    }
+    .name{
+        flex:350;
+        padding-left: .5rem;
+        text-align: left;
+        word-break: keep-all;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .money{
+        flex:200;
+    }
+    .num{
+        flex:200;
+    }
+}
+.csroll_box {
+    font-size: .3rem;
+    width: 100%;
+    height: 9rem;
+    position: relative;
+    .goods {
+        width: 100%;
+        .item{
+            display: webkit-flex;
+            display: flex;
+            border-bottom: .02rem dashed #ddd;
+            height: .8rem;
+            line-height: .8rem;
+            span{
+                text-align: center;
+                color: #666;
+            }
+            .name{
+                flex:350;
+                padding-left: .5rem;
+                text-align: left;
+                word-break: keep-all;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .money{
+                flex:200;
+            }
+            .num{
+                flex:200;
+            }
+        }
+    }
+}
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+  }
+.swiper-wrapper {
+    display: flex !important;
+    width: 200%;
+}
+}

@@ -1,0 +1,337 @@
+.index{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+	padding: .8rem 10% 0;
+	box-sizing: border-box;
+	font-size: .32rem;
+	.blur{
+		filter:blur(3px);
+	}
+	.title {
+		font-size: .36rem;
+		color: #ff9793;
+		text-align: center;
+	}
+	.orderNumber {
+		text-align: center;
+		font-size: .64rem;
+		color: #ff9793;
+		font-weight: 600;
+		margin-top: .1rem;
+		margin-bottom: .8rem;
+	}
+	.menuBox {
+		width: 100%;
+	}
+	
+	.item {
+		width: 27%;
+		height: 1.8rem;
+		float: left;
+		margin-right: 9%;
+		text-align: center;
+		border-radius: .16rem;
+		margin-bottom: .5rem;
+		color:#fff;
+		i {
+			font-size: .7rem;
+			height: 1.2rem;
+			line-height: 1.2rem;
+		}
+		.name {
+			font-size: .36rem;
+		}
+	}
+	.color1 {
+		background-color: #f2ca68;
+  		box-shadow: 0 0 8px 0 #f2ca68;		
+	}
+	.color2 {
+		background-color: #eeb85f;
+  		box-shadow: 0 0 8px 0 #eeb85f;
+	}
+	.color3 {
+		background-color: #ecac59;
+  		box-shadow: 0 0 8px 0 #ecac59;
+	}
+	.color4 {
+		background-color: #e9a154;
+  		box-shadow: 0 0 8px 0 #e9a154;
+	}
+	.color5 {
+		background-color: #e6944d;
+  		box-shadow: 0 0 8px 0 #e6944d;
+	}
+	.color6 {
+		background-color: #e48646;
+  		box-shadow: 0 0 8px 0 #e48646;
+	}
+	.color7 {
+		background-color: #e17a40;
+  		box-shadow: 0 0 8px 0 #e17a40;
+	}
+	.color8 {
+		background-color: #df6f3b;
+  		box-shadow: 0 0 8px 0 #df6f3b;
+	}
+	.color9 {
+		background-color: #db5f32;
+  		box-shadow: 0 0 8px 0 #db5f32;
+	}
+	.item:nth-of-type(3n) {
+		margin-right: 0;
+	}
+	.code {
+		position: fixed;
+		top:0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 3;
+		// transform: translate(0,-50%);
+		width: 100%;
+		height: auto;
+		background-color: rgba(255,255,255,0.5);
+		text-align: center;
+		.code-wrap{
+			position: absolute;
+			top: 50%;
+			right: 0;
+			left: 0;
+			transform: translate(0,-50%);
+			#qrcode {
+				display: inline-block;
+				z-index: 2;
+				margin-bottom: .5rem;
+			}
+			.info{
+				text-align: center;
+				.vip-charge-tit-info{
+					font-size: .3rem;
+					text-align: center;
+					color: #db5f32;
+					// position: absolute;
+					// bottom: 3.6rem;
+					// left: 50%;
+					// transform: translate(-50%,0);
+				}
+				.vip-charge{
+					margin: .5rem auto;
+					font-size: .3rem;
+					width: 3rem;
+					height: .68rem;
+					border:1px solid #db5f32;
+					border-radius: .34rem;
+					text-align: center;
+					line-height: .68rem;
+					color: #db5f32;
+					// position: absolute;
+					// bottom: 2rem;
+					// left: 50%;
+					// transform: translate(-50%,0);
+				}
+			}
+		}
+		
+		
+	}
+	.vip-inp{
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.3);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 999999;
+		.inp-box{
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			position: relative;
+			.inp-wrap{
+				width: 100%;
+				position: absolute;
+				top: 15%;
+				left: 50%;
+				transform: translate(-50%,-90%);
+				input{
+					width: 75%;
+					height:.80rem;
+					border: none;
+					border-radius: .4rem;
+					padding-left: .2rem;
+					font-size: .32rem;
+					box-sizing: border-box;
+				}
+				.vip-list{
+					position: absolute;
+					width: 74.59%;
+					max-height: 4rem;
+					overflow-y: auto;
+					background: #fff;
+					position: absolute;
+					left: 50%;
+					top: 1rem;
+					box-sizing: border-box;
+					transform: translate(-50%,0);
+					border-radius: 2px;
+					ul{
+						li{
+							width: 100%;
+							padding: .2rem .1rem;
+							box-sizing: border-box;
+							font-size: .3rem;
+							position: relative;
+							overflow: hidden;
+							border-bottom: 1px solid #ddd;
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	.recharge{
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.7);
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		font-size: .28rem;
+		// z-index: 999999999999;
+		.recharge-box{
+			width: 85%;
+			height: 85%;
+			background: #fff;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			border-radius: 5px;
+			.recharge-tit{
+				font-size: .30rem;
+				font-weight: 600;
+				text-align: center;
+				padding: .2rem 0;
+			}
+			.vip-info{
+				position: relative;
+				overflow: hidden;
+				padding: 0 .1rem;
+				.name{
+					display: inline-block;
+					width: 40%;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.count-info {
+					display: inline-block;
+					width: 50%;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+			}
+			.recharge-rules{
+				text-align: center;
+				padding: .2rem 0;
+				height: 65%;
+				position: relative;
+				overflow: hidden;
+				overflow-y: scroll;
+				ul{
+					width: 100%;
+					li{
+						display: inline-block;
+						width: 90%;
+						border: 1px solid #FA7D70;
+						border-radius: 5px;
+						text-align: center;
+						padding: .15rem 0;
+						color: #FA7D70;
+						margin: .15rem 0;
+					}
+				}
+			}
+			.customize-money{
+				padding: 0.2rem .5rem;
+				text-align: center;
+				input{
+					width: 1.9rem;
+					border: none;
+					border-bottom: 1px solid #FA7D70;
+					text-align: center;
+					font-size: .3rem;
+				}
+			}
+			.confirm-box{
+				text-align:center;
+				position: fixed;
+				width: 100%;
+				bottom: .2rem;
+				left: 50%;
+				transform: translate(-50%,0);
+				button{
+					display: inline-block;
+					width: 2rem;
+					height: .7rem;
+					line-height: .7rem;
+					border-radius: .35rem;
+					border: none;
+					background: #ccc;
+					color: #fff;
+					&.yes{
+						background: #FA7D70;
+					}
+				}
+			}
+			.money-info{
+				width: 100%;
+				text-align: center;
+				color: #fff;
+				.money-info-box{
+					margin-top: .5rem;
+					display: inline-block;
+					width: 80%;
+					background: #30bdff;
+					padding: .2rem 0;
+					border-radius: 5px;
+					.back{
+						text-decoration: underline;
+						text-align: left;
+						padding:.2rem;
+						font-size: .35rem;
+					}
+					.amount{
+						font-size: 1rem;
+					}
+					.charge-code{
+						padding: .2rem;
+						background: transparent;
+					}
+				}
+				.pay{
+					padding: .5rem 0 .2rem 0;
+					button{
+						width: 90%;
+						border: none;
+						height: .9rem;
+						border-radius: .45rem;
+						color: #fff;
+						background: #FA7D70;
+						font-size: .3rem;
+					}
+				}
+			}
+		}
+	}
+}

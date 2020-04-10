@@ -1,0 +1,57 @@
+.couponDetail{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: .32rem;
+    .top-bg {
+        background: url($couponDetailBG) no-repeat left top;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        height: 3rem;
+        .top-inner {
+            color: #fff;
+            text-align: center;
+            .title {
+                font-size: .5rem;
+            }
+            .productName{
+                margin-top: .2rem;
+                font-size: .36rem;
+            }
+        }
+    }
+    .items {
+        .item {
+            display: flex;
+            padding: 0 .2rem;
+            height: 1rem;
+            line-height: 1rem;
+            border-bottom: 1px solid #ccc;
+            .name{
+                flex:220;
+            }
+            .text{
+                flex:500;
+                text-align: right;
+            }
+        }
+    }
+    .content {
+        padding: .2rem;
+         border-bottom: 1px solid #ccc;
+        p {
+            text-indent: 2em;
+            font-size: .3rem;
+            line-height: 1.5em;
+        }
+        .title {
+            font-size: .32rem;
+            margin-bottom: .2rem;
+        }
+    }
+}

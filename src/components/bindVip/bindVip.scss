@@ -1,0 +1,150 @@
+#bindVip{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1002;
+    background: #fff;
+    top: 0;
+    left:0;
+    overflow: hidden;
+    overflow-y: auto;
+    
+    .search{
+        width: 100%;
+        height: 2rem;
+        line-height: 2rem !important;
+        text-align: center;
+        box-sizing: border-box;
+        background: #f4f4f4;
+        font-size: 0;
+        .serach-wrap{
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            width: 100%;
+            height: .9rem;
+            line-height: .9rem;
+            font-size: 0;
+            input{
+                width: 85%;
+                height: .9rem;
+                line-height: .9rem;
+                padding: 0;
+                text-align: center;
+                border: none;
+                border: 1px solid #ddd;
+                border-radius: .1rem;
+                font-size: .3rem;
+            }
+            .search-list {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%,0);
+                width: 85%;
+                max-height: 3.5rem;
+                background: #fff;
+                border:1px solid #ddd;
+                z-index: 1010;
+                box-shadow: 0 0 5px rgba(0,0,0,.1);
+                overflow: hidden;
+                overflow-y: auto;
+                ul{
+                    li{
+                        width: 100%;
+                        text-align: center;
+                        font-size: .34rem;
+                    }
+                }
+            }
+        }
+        
+    }
+        .set-item{
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            height: 1.1rem;
+            line-height: 1.1rem;
+            padding:0 .3rem;
+            box-sizing: border-box;
+            .left-tit{
+                height: 100%;
+                float: left;
+                font-size: .34rem;
+            }
+            .right-cont{
+                height: 100%;
+                float: right;
+                .cont{
+                    font-size: .3rem;
+                    vertical-align: middle;
+                }
+                .iconfont{
+                    display: inline-block;
+                    font-size: .3rem;
+                    vertical-align: middle;
+                    &.arrow-bottom{
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            &.other-sty{
+                height: auto;
+                .left-tit{
+                    float: inherit;
+                    display: block;
+                    width: 100%;
+                }
+                .right-cont{
+                    float: inherit;
+                    display: block;
+                    width: 100%;
+                    font-size: .3rem;
+                    textarea{
+                        display: inline-block;
+                        width: 100%;
+                        height: 3rem;
+                        padding: .3rem 0 0 .3rem;
+                        background: #f8f8f8;
+                        border: 1px solid #ddd;
+                        font-size: .34rem;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .line{
+            width: calc(100% - .3rem);
+            padding: 0 .3rem;
+            box-sizing: border-box;
+            height: 1px;
+            background: #e3e3e3;
+            float: right;
+        }
+        .span-panle{
+            width: 100%;
+            height: .2rem;
+            background: #eeeeee;
+        }
+        .btn{
+            font-size: 0;
+            text-align: center;
+            padding: .3rem 0;
+            box-sizing: border-box;
+            button{
+                border: none;
+                color: #fff;
+                height: 1rem;
+                line-height: 1rem;
+                font-size: .3rem;
+                border-radius: .1rem;
+                width: 85%;
+                background: #e66a6a;
+                &.close{
+                    background: #ccc;
+                    margin-bottom: .25rem;
+                }
+            }
+        }
+}

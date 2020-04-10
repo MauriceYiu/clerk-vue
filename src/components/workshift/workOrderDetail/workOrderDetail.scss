@@ -1,0 +1,63 @@
+.earnings {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+	box-sizing: border-box;
+	font-size: .32rem;
+	.smallTitle {
+		height: 5%;
+		padding-left: 5%;
+	}
+	.orderList {
+		position: absolute;
+		top: 5%;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		ul {
+			font-size: .24rem;
+			color: #999999;
+			li {
+				border-top: solid 1px #dddddd;
+				padding: .3rem 7%;
+				box-sizing: border-box;
+				.top {
+					padding-bottom: .15rem;
+					color: #666666;
+					font-size: .28rem;
+					.total {
+					}
+				}
+				.goods {
+					padding: .15rem 0;
+					.name {
+						max-width: 85%;
+					}
+				}
+				.date {
+					padding-top: .15rem;	
+				}
+			}
+		}
+		.earningsColor {
+			color: #dc6060;
+		}
+		.earningsColor1 {
+			color: #dc6060;
+		}
+		#scroller {
+			width: 100%;
+		}
+		#pullUp {
+			padding:0 10px;
+			height:30px;
+			line-height:30px;
+			color:#888;
+			text-align:center;
+		}
+	}
+}

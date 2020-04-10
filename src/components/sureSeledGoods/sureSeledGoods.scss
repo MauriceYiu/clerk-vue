@@ -1,0 +1,147 @@
+#sureSeledGoods{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    .seled-goods-emp{
+        height: 1.1rem;
+        .set-item{
+            position: relative;
+            overflow: hidden;
+            background: #fff;
+            height: 1.1rem;
+            line-height: 1.1rem;
+            padding:0 .3rem;
+            box-sizing: border-box;
+            .left-tit{
+                float: left;
+                font-size: .34rem;
+            }
+            .right-cont{
+                float: right;
+                .cont{
+                    font-size: .3rem;
+                    vertical-align: middle;
+                }
+                .iconfont{
+                    font-size: .3rem;
+                    vertical-align: middle;
+                }
+            }
+            &.other-sty{
+                height: auto;
+                .left-tit{
+                    float: inherit;
+                    display: block;
+                    width: 100%;
+                }
+                .right-cont{
+                    float: inherit;
+                    display: block;
+                    width: 100%;
+                    font-size: .3rem;
+                    textarea{
+                        display: inline-block;
+                        width: 100%;
+                        height: 3rem;
+                        padding: .3rem 0 0 .3rem;
+                        background: #f8f8f8;
+                        border: 1px solid #ddd;
+                        font-size: .34rem;
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .seled-goods-wrap{
+        height: 100%;
+        .tit,.goods-cont{
+            font-size: 0;
+            padding: 0 .3rem;
+            box-sizing: border-box;
+            span{
+                display: inline-block;
+                font-size: .3rem;
+                width: 33.333%;
+                text-align: center;
+                vertical-align: middle;
+                &.p-name{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+            ul{
+                li.item{
+                    height: 1rem;
+                    line-height: 1rem;
+                    border-bottom: 1px solid #eee;
+                    b{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .tit{
+            height: 0.9rem;
+            line-height: 0.9rem;
+            background: #f4f4f4;
+        }
+        .goods-cont{
+            height: calc(100% - 3.5rem);
+            overflow: hidden;
+        }
+    }
+    .cart{
+        width: 100%;
+        height: 1.2rem;
+        background: #fff;
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0 0 5px rgba(0,0,0,.3);
+        line-height: 1.2rem;
+        font-size: 0;
+        .total-count{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: .30rem;
+            height: 100%;
+            line-height: 100%;
+            margin-left: .2rem;
+        }
+        .total-money{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: .30rem;
+            height: 100%;
+            line-height: 100%;
+            color: red;
+            margin-left: .2rem;
+        }
+        .go-pay,.close{
+            min-width: .8rem;
+            max-width: 2.4rem;
+            padding: 0 .3rem;
+            height: 100%;
+            background: #e66a6a;
+            float: right;
+            font-size: .30rem;
+            text-align: center;
+            color: #fff;
+        }
+        .close{
+            display: inline-block;
+            background: #ccc;
+            color: #fff;
+        }
+    }
+}
